@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scan Results</title>
+    </head>
+    <body>
+        <h1>Scan Results</h1>
+        <table>
+            <tr>
+                <th>Host</th>
+                <th>Port</th>
+                <th>State</th>
+            </tr>
+            % for result in results %
+            <tr>
+                <td>{{result[0]}}</td>
+                <td>{{result[1]}}</td>
+            </tr>
+        </table>
+    </body>
+</html>
